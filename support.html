@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — COS Fantasy</title>
+<meta name="description" content="Help with COS Fantasy: sign-in problems, scoring questions, leagues, and notifications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F0F1E;--ink-soft:#2A2A3C;--paper:#FBFBF8;--line:#D8D8D0;
+    --pitch:#00754A;--pitch-bright:#00FF85;--muted:#63636E;--measure:34rem;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",system-ui,-apple-system,sans-serif;
+    font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  .sheet-head{background:var(--ink);color:var(--paper);padding:2.5rem 1.5rem 2rem;}
+  .sheet-inner{max-width:var(--measure);margin:0 auto;}
+  .back{
+    display:inline-block;font-family:"JetBrains Mono",monospace;
+    font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--pitch-bright);text-decoration:none;margin-bottom:1.4rem;
+  }
+  .back:hover{text-decoration:underline;}
+  .back:focus-visible{outline:2px solid var(--pitch-bright);outline-offset:3px;}
+  h1{
+    font-family:"Archivo Narrow",sans-serif;font-weight:700;
+    font-size:clamp(2.2rem,8vw,3rem);line-height:1;
+    letter-spacing:-.015em;text-transform:uppercase;margin:0 0 1rem;
+  }
+  .standfirst{font-size:1rem;color:#B4B4C0;margin:0;max-width:30rem;}
+
+  main{max-width:var(--measure);margin:0 auto;padding:2.75rem 1.5rem 5rem;}
+
+  h2{
+    font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:1.4rem;
+    letter-spacing:-.01em;text-transform:uppercase;margin:0 0 1.25rem;
+  }
+  p{margin:0 0 1rem;}
+  a{color:var(--ink);text-decoration-color:var(--pitch);text-underline-offset:3px;}
+  a:hover{color:var(--pitch);}
+  a:focus-visible{outline:2px solid var(--pitch);outline-offset:3px;border-radius:2px;}
+
+  .qa{border-top:1px solid var(--line);padding:1.4rem 0;}
+  .qa:first-of-type{border-top:2px solid var(--ink);}
+  .q{font-weight:600;margin:0 0 .5rem;font-size:1rem;}
+  .a{margin:0;color:var(--ink-soft);font-size:.95rem;}
+  .a + .a{margin-top:.6rem;}
+
+  .contact-block{
+    background:var(--ink);color:var(--paper);
+    padding:1.75rem 1.5rem;margin:2.5rem 0 0;
+  }
+  .contact-block h2{color:var(--paper);margin-bottom:.75rem;}
+  .contact-block p{color:#B4B4C0;font-size:.95rem;}
+  .contact-block a{color:var(--pitch-bright);text-decoration-color:var(--pitch-bright);}
+  .contact-mail{
+    font-family:"JetBrains Mono",monospace;font-size:1rem;
+    display:inline-block;margin-top:.5rem;word-break:break-all;
+  }
+
+  footer{
+    border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;
+    font-size:.82rem;color:var(--muted);
+  }
+  footer a{display:inline-block;margin-right:1.25rem;}
+</style>
+</head>
+<body>
+
+<header class="sheet-head">
+  <div class="sheet-inner">
+    <a class="back" href="index.html">&larr; COS Fantasy</a>
+    <h1>Support</h1>
+    <p class="standfirst">
+      Common problems and how to fix them. If yours isn't here, write to us.
+    </p>
+  </div>
+</header>
+
+<main>
+
+  <h2>Common questions</h2>
+
+  <div class="qa">
+    <p class="q">Google sign-in opens a browser and comes back to nothing</p>
+    <p class="a">
+      Usually a stale browser session. Close COS Fantasy completely, reopen it,
+      and try again. If it keeps happening, clear your browser's cookies for
+      accounts.google.com and retry.
+    </p>
+  </div>
+
+  <div class="qa">
+    <p class="q">Why is Google the only way to sign in?</p>
+    <p class="a">
+      Email sign-in needs a verified sending domain so verification codes
+      actually reach you. That's coming. Google sign-in works now, and your
+      team carries over when email arrives — nothing is lost.
+    </p>
+  </div>
+
+  <div class="qa">
+    <p class="q">My points haven't updated</p>
+    <p class="a">
+      Points are entered after each match finishes, not live during play. Pull
+      down on the My Team screen to refresh. If a match ended more than a day
+      ago and your points still look wrong, email us with the gameweek.
+    </p>
+  </div>
+
+  <div class="qa">
+    <p class="q">A league code isn't working</p>
+    <p class="a">
+      Codes are case-insensitive but exact — check for a confused 0 and O, or 1
+      and I. You also need a team before joining a league. If it still fails,
+      ask the league creator to re-share the code from the Leagues screen.
+    </p>
+  </div>
+
+  <div class="qa">
+    <p class="q">I'm not getting notifications</p>
+    <p class="a">
+      Check Profile for the alert types you've enabled, then check COS Fantasy
+      has notification permission in your device settings. Notifications don't
+      work on emulators — only on a real phone.
+    </p>
+  </div>
+
+  <div class="qa">
+    <p class="q">The app says it can't connect</p>
+    <p class="a">
+      The server sleeps when idle and takes up to a minute to wake. Wait, then
+      pull to refresh. If it persists across several minutes and your
+      connection is fine, tell us.
+    </p>
+  </div>
+
+  <div class="qa">
+    <p class="q">How do I delete my account?</p>
+    <p class="a">
+      Profile &rarr; Delete Account, or see the
+      <a href="delete-account.html">deletion page</a> if you've already
+      uninstalled.
+    </p>
+  </div>
+
+  <div class="contact-block">
+    <h2>Still stuck</h2>
+    <p>
+      Tell us what you were doing, what you expected, and what happened
+      instead. If you saw an error with a reference code, include it — it points
+      us straight at the problem.
+    </p>
+    <p>
+      <a class="contact-mail" href="mailto:support@cosfantasy.app">support@cosfantasy.app</a>
+    </p>
+  </div>
+
+  <footer>
+    <a href="index.html">Privacy policy</a>
+    <a href="delete-account.html">Delete account</a>
+    <p style="margin-top:1rem">
+      COS Fantasy is an independent student project, not affiliated with or
+      endorsed by KNUST.
+    </p>
+  </footer>
+
+</main>
+</body>
+</html>

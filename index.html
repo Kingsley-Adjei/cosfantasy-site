@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — COS Fantasy</title>
+<meta name="description" content="How COS Fantasy collects, uses, and protects your information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F0F1E;
+    --ink-soft:#2A2A3C;
+    --paper:#FBFBF8;
+    --line:#D8D8D0;
+    --pitch:#00754A;
+    --pitch-bright:#00FF85;
+    --muted:#63636E;
+    --measure:34rem;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Inter",system-ui,-apple-system,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ── Team sheet header ───────────────────────────────────────── */
+  .sheet-head{
+    background:var(--ink);
+    color:var(--paper);
+    padding:2.5rem 1.5rem 2rem;
+  }
+  .sheet-inner{max-width:var(--measure);margin:0 auto;}
+
+  .crest{
+    display:inline-flex;
+    align-items:center;
+    gap:.6rem;
+    font-family:"JetBrains Mono",monospace;
+    font-size:.7rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--pitch-bright);
+    margin-bottom:1.4rem;
+  }
+  .crest::before{
+    content:"";
+    width:1.6rem;height:1px;
+    background:var(--pitch-bright);
+  }
+
+  h1{
+    font-family:"Archivo Narrow",sans-serif;
+    font-weight:700;
+    font-size:clamp(2.4rem,9vw,3.4rem);
+    line-height:.98;
+    letter-spacing:-.015em;
+    text-transform:uppercase;
+    margin:0 0 1rem;
+  }
+
+  .standfirst{
+    font-size:1rem;
+    color:#B4B4C0;
+    margin:0 0 1.6rem;
+    max-width:30rem;
+  }
+
+  .stamp{
+    font-family:"JetBrains Mono",monospace;
+    font-size:.72rem;
+    letter-spacing:.08em;
+    color:#7C7C8A;
+    border-top:1px solid #2A2A3C;
+    padding-top:1rem;
+  }
+  .stamp b{color:var(--paper);font-weight:500;}
+
+  /* ── Body ────────────────────────────────────────────────────── */
+  main{
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:0 1.5rem 5rem;
+  }
+
+  /* Numbered like squad positions — the policy genuinely reads in order,
+     and the numbers give people something to cite when they email. */
+  section{
+    padding-top:2.75rem;
+    border-top:1px solid var(--line);
+    margin-top:2.75rem;
+  }
+  section:first-of-type{border-top:none;margin-top:0;}
+
+  .num{
+    font-family:"JetBrains Mono",monospace;
+    font-size:.72rem;
+    color:var(--pitch);
+    letter-spacing:.1em;
+    display:block;
+    margin-bottom:.5rem;
+  }
+
+  h2{
+    font-family:"Archivo Narrow",sans-serif;
+    font-weight:700;
+    font-size:1.5rem;
+    letter-spacing:-.01em;
+    text-transform:uppercase;
+    margin:0 0 1rem;
+    line-height:1.15;
+  }
+
+  h3{
+    font-size:.95rem;
+    font-weight:600;
+    margin:1.75rem 0 .5rem;
+    color:var(--ink-soft);
+  }
+
+  p{margin:0 0 1rem;}
+  p:last-child{margin-bottom:0;}
+
+  ul{margin:0 0 1rem;padding-left:1.15rem;}
+  li{margin-bottom:.5rem;}
+  li:last-child{margin-bottom:0;}
+
+  a{color:var(--ink);text-decoration-color:var(--pitch);text-underline-offset:3px;}
+  a:hover{color:var(--pitch);}
+  a:focus-visible{outline:2px solid var(--pitch);outline-offset:3px;border-radius:2px;}
+
+  /* ── Data table, set like a fixture list ─────────────────────── */
+  .fixtures{
+    border-top:2px solid var(--ink);
+    margin:1.25rem 0;
+  }
+  .fixture{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:.15rem;
+    padding:.85rem 0;
+    border-bottom:1px solid var(--line);
+  }
+  .fixture dt{
+    font-weight:600;
+    font-size:.95rem;
+  }
+  .fixture dd{
+    margin:0;
+    font-size:.88rem;
+    color:var(--muted);
+  }
+  .fixture .why{
+    font-family:"JetBrains Mono",monospace;
+    font-size:.68rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--pitch);
+  }
+  @media(min-width:34rem){
+    .fixture{
+      grid-template-columns:11rem 1fr;
+      gap:.15rem 1.25rem;
+      align-items:baseline;
+    }
+    .fixture .why{grid-column:1;}
+    .fixture dd:not(.why){grid-column:2;grid-row:1 / span 2;}
+  }
+
+  /* ── Callout ─────────────────────────────────────────────────── */
+  .note{
+    background:#F1F1EC;
+    border-left:3px solid var(--pitch);
+    padding:1rem 1.15rem;
+    margin:1.5rem 0;
+    font-size:.93rem;
+  }
+  .note p:last-child{margin-bottom:0;}
+
+  .contact{
+    font-family:"JetBrains Mono",monospace;
+    font-size:.9rem;
+    word-break:break-all;
+  }
+
+  /* ── Footer ──────────────────────────────────────────────────── */
+  footer{
+    border-top:1px solid var(--line);
+    margin-top:3.5rem;
+    padding-top:1.5rem;
+    font-size:.82rem;
+    color:var(--muted);
+  }
+  footer a{display:inline-block;margin-right:1.25rem;}
+
+  .disclaimer{
+    margin-top:1.25rem;
+    font-size:.78rem;
+    line-height:1.55;
+  }
+
+  @media (prefers-reduced-motion:no-preference){
+    section{animation:rise .5s ease-out both;}
+    @keyframes rise{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+  }
+</style>
+</head>
+<body>
+
+<header class="sheet-head">
+  <div class="sheet-inner">
+    <span class="crest">COS Fantasy</span>
+    <h1>Privacy<br>Policy</h1>
+    <p class="standfirst">
+      What we collect, why we collect it, and how to get rid of it. Written to
+      be read, not skimmed past.
+    </p>
+    <p class="stamp">
+      Last updated <b>24 July 2026</b> &nbsp;·&nbsp; Version <b>1.0</b>
+    </p>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <span class="num">01</span>
+    <h2>Who runs this app</h2>
+    <p>
+      COS Fantasy is a fantasy football app for students, built and operated by
+      an independent student developer at Kwame Nkrumah University of Science
+      and Technology in Kumasi, Ghana.
+    </p>
+    <div class="note">
+      <p>
+        COS Fantasy is an independent student project. It is not affiliated
+        with, endorsed by, or operated by KNUST, its College of Science, or any
+        professional football league or club.
+      </p>
+    </div>
+    <p>
+      Questions about anything on this page go to
+      <a class="contact" href="mailto:support@cosfantasy.app">support@cosfantasy.app</a>.
+    </p>
+  </section>
+
+  <section>
+    <span class="num">02</span>
+    <h2>What we collect</h2>
+    <p>
+      Everything below is collected because a specific feature needs it. There
+      is no advertising in COS Fantasy, and nothing here is sold.
+    </p>
+
+    <dl class="fixtures">
+      <div class="fixture">
+        <dt>Email address</dt>
+        <dd class="why">Account</dd>
+        <dd>
+          Comes from Google when you sign in. It identifies your account and
+          appears to other managers in leagues you join.
+        </dd>
+      </div>
+      <div class="fixture">
+        <dt>Google account ID</dt>
+        <dd class="why">Sign-in</dd>
+        <dd>
+          A reference number from Google that lets us recognise you on your next
+          sign-in. We never receive your Google password.
+        </dd>
+      </div>
+      <div class="fixture">
+        <dt>Team &amp; league activity</dt>
+        <dd class="why">Gameplay</dd>
+        <dd>
+          Your team name, squad selections, captain choice, transfers, points,
+          and league memberships. This is the app.
+        </dd>
+      </div>
+      <div class="fixture">
+        <dt>Notification token</dt>
+        <dd class="why">Alerts</dd>
+        <dd>
+          A device identifier issued by Expo, used to send match and deadline
+          alerts. Only stored if you allow notifications.
+        </dd>
+      </div>
+      <div class="fixture">
+        <dt>Screen usage</dt>
+        <dd class="why">Diagnostics</dd>
+        <dd>
+          Which screens you open and for roughly how long, so we can find the
+          slow and broken parts. Not linked to your identity for analysis.
+        </dd>
+      </div>
+    </dl>
+
+    <h3>What we never collect</h3>
+    <ul>
+      <li>Your location</li>
+      <li>Your contacts, photos, camera, or microphone</li>
+      <li>Payment details — COS Fantasy is free and has no purchases</li>
+      <li>Anything from other apps on your device</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="num">03</span>
+    <h2>Who else sees it</h2>
+    <p>
+      A few services process data on our behalf. Each one gets only what it
+      needs to do its job.
+    </p>
+    <ul>
+      <li><b>Google</b> — verifies who you are when you sign in.</li>
+      <li><b>Supabase</b> — handles the sign-in exchange between Google and our servers.</li>
+      <li><b>CockroachDB</b> — stores your account and team data.</li>
+      <li><b>Render</b> — runs the servers the app talks to.</li>
+      <li><b>Expo</b> — delivers push notifications to your device.</li>
+    </ul>
+    <p>
+      We do not sell your data, share it with advertisers, or use it to build
+      advertising profiles. We would disclose information if required by
+      Ghanaian law or a valid legal order, and nowhere else.
+    </p>
+    <h3>Visible to other players</h3>
+    <p>
+      Inside a league, other managers can see your team name, your points, your
+      rank, and your squad. Your email is shown alongside your team in league
+      standings. Nothing else about you is visible to them.
+    </p>
+  </section>
+
+  <section>
+    <span class="num">04</span>
+    <h2>How long we keep it</h2>
+    <p>
+      Your account data stays for as long as your account exists. Delete your
+      account and it is removed immediately — see section 06.
+    </p>
+    <p>
+      Usage diagnostics are capped at the most recent 500 events per device and
+      overwrite themselves as you keep using the app. Server logs are kept for
+      30 days for debugging and security, then discarded.
+    </p>
+  </section>
+
+  <section>
+    <span class="num">05</span>
+    <h2>How it is protected</h2>
+    <ul>
+      <li>Everything between the app and our servers travels over HTTPS.</li>
+      <li>The database connection is encrypted and certificate-verified.</li>
+      <li>Your sign-in session is held in your device's secure keystore, not in ordinary app storage.</li>
+      <li>We never see or store your Google password.</li>
+    </ul>
+    <p>
+      No system is perfectly secure, and we will not pretend otherwise. If we
+      discover a breach affecting your data, we will tell affected users by
+      email and post a notice on this page.
+    </p>
+  </section>
+
+  <section>
+    <span class="num">06</span>
+    <h2>Deleting your account</h2>
+    <p>
+      You can delete your account and everything attached to it at any time.
+      There are two ways.
+    </p>
+
+    <h3>In the app</h3>
+    <p>
+      Open <b>Profile</b>, scroll to the bottom, and tap <b>Delete Account</b>.
+      Confirm, and the deletion happens immediately.
+    </p>
+
+    <h3>By email</h3>
+    <p>
+      If you have uninstalled the app or cannot sign in, email
+      <a class="contact" href="mailto:support@cosfantasy.app">support@cosfantasy.app</a>
+      from the address on your account with the subject <b>Delete my account</b>.
+      We will confirm within 30 days.
+    </p>
+
+    <div class="note">
+      <p>
+        <b>Deleted permanently:</b> your account, email address, team, squad,
+        transfer history, points, league memberships, notification token, and
+        usage records. Private leagues you created are removed once the last
+        member leaves.
+      </p>
+      <p style="margin-top:.75rem">
+        <b>Retained:</b> nothing that identifies you. Aggregate match and
+        scoring records stay, but your name and email are gone from them. This
+        cannot be undone — there is no recovery window.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">07</span>
+    <h2>Your other choices</h2>
+    <ul>
+      <li><b>Notifications</b> — turn any category off in Profile, or all of them in your device settings.</li>
+      <li><b>See your data</b> — your profile screen shows everything we hold. Email us for a copy in a portable format.</li>
+      <li><b>Fix something wrong</b> — email us and we will correct it.</li>
+    </ul>
+    <p>
+      Ghana's Data Protection Act, 2012 (Act 843) gives you rights over your
+      personal data, including access and correction. Exercising any of them
+      costs nothing.
+    </p>
+  </section>
+
+  <section>
+    <span class="num">08</span>
+    <h2>Children</h2>
+    <p>
+      COS Fantasy is intended for university students and is not directed at
+      children under 13. We do not knowingly collect information from children
+      under 13. If you believe a child has created an account, email us and we
+      will delete it.
+    </p>
+  </section>
+
+  <section>
+    <span class="num">09</span>
+    <h2>Changes to this policy</h2>
+    <p>
+      If this policy changes, the date at the top changes with it. For anything
+      that meaningfully affects how your data is handled, we will notify you in
+      the app before it takes effect.
+    </p>
+  </section>
+
+  <footer>
+    <a href="delete-account.html">Delete your account</a>
+    <a href="support.html">Support</a>
+    <p class="disclaimer">
+      COS Fantasy is an independent student project, not affiliated with or
+      endorsed by KNUST or any football league. Player names used in the app
+      refer to participants in student-organised matches.
+    </p>
+  </footer>
+
+</main>
+</body>
+</html>

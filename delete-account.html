@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your Account — COS Fantasy</title>
+<meta name="description" content="How to permanently delete your COS Fantasy account and all associated data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F0F1E;
+    --ink-soft:#2A2A3C;
+    --paper:#FBFBF8;
+    --line:#D8D8D0;
+    --pitch:#00754A;
+    --pitch-bright:#00FF85;
+    --muted:#63636E;
+    --alert:#B3261E;
+    --measure:34rem;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Inter",system-ui,-apple-system,sans-serif;
+    font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+
+  .sheet-head{background:var(--ink);color:var(--paper);padding:2.5rem 1.5rem 2rem;}
+  .sheet-inner{max-width:var(--measure);margin:0 auto;}
+
+  .back{
+    display:inline-block;
+    font-family:"JetBrains Mono",monospace;
+    font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--pitch-bright);text-decoration:none;margin-bottom:1.4rem;
+  }
+  .back:hover{text-decoration:underline;}
+  .back:focus-visible{outline:2px solid var(--pitch-bright);outline-offset:3px;}
+
+  h1{
+    font-family:"Archivo Narrow",sans-serif;font-weight:700;
+    font-size:clamp(2.2rem,8vw,3rem);line-height:1;
+    letter-spacing:-.015em;text-transform:uppercase;margin:0 0 1rem;
+  }
+  .standfirst{font-size:1rem;color:#B4B4C0;margin:0;max-width:30rem;}
+
+  main{max-width:var(--measure);margin:0 auto;padding:2.75rem 1.5rem 5rem;}
+
+  h2{
+    font-family:"Archivo Narrow",sans-serif;font-weight:700;
+    font-size:1.4rem;letter-spacing:-.01em;text-transform:uppercase;
+    margin:0 0 1rem;line-height:1.15;
+  }
+  h3{font-size:.95rem;font-weight:600;margin:1.75rem 0 .5rem;color:var(--ink-soft);}
+  p{margin:0 0 1rem;}
+  p:last-child{margin-bottom:0;}
+  ul{margin:0 0 1rem;padding-left:1.15rem;}
+  li{margin-bottom:.45rem;}
+
+  a{color:var(--ink);text-decoration-color:var(--pitch);text-underline-offset:3px;}
+  a:hover{color:var(--pitch);}
+  a:focus-visible{outline:2px solid var(--pitch);outline-offset:3px;border-radius:2px;}
+
+  /* Two routes, presented as an ordered choice rather than decorative cards */
+  .route{
+    border-top:2px solid var(--ink);
+    padding-top:1.25rem;
+    margin-bottom:2.5rem;
+  }
+  .route-label{
+    font-family:"JetBrains Mono",monospace;
+    font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--pitch);margin-bottom:.4rem;display:block;
+  }
+
+  ol.steps{margin:0;padding-left:1.25rem;}
+  ol.steps li{margin-bottom:.6rem;}
+
+  .contact{font-family:"JetBrains Mono",monospace;font-size:.92rem;word-break:break-all;}
+
+  .mailto-btn{
+    display:inline-block;
+    background:var(--ink);color:var(--paper);
+    font-family:"Archivo Narrow",sans-serif;font-weight:700;
+    text-transform:uppercase;letter-spacing:.04em;font-size:1rem;
+    padding:.8rem 1.5rem;text-decoration:none;margin-top:.75rem;
+  }
+  .mailto-btn:hover{background:var(--ink-soft);color:var(--pitch-bright);}
+  .mailto-btn:focus-visible{outline:3px solid var(--pitch);outline-offset:2px;}
+
+  .ledger{
+    border-top:2px solid var(--ink);
+    margin:1.25rem 0 0;
+  }
+  .ledger-row{
+    display:grid;grid-template-columns:1fr;gap:.2rem;
+    padding:.9rem 0;border-bottom:1px solid var(--line);
+  }
+  @media(min-width:32rem){
+    .ledger-row{grid-template-columns:8.5rem 1fr;gap:1.25rem;align-items:baseline;}
+  }
+  .ledger-key{
+    font-family:"JetBrains Mono",monospace;font-size:.7rem;
+    letter-spacing:.08em;text-transform:uppercase;
+  }
+  .gone{color:var(--alert);}
+  .kept{color:var(--muted);}
+
+  .warn{
+    background:#FBEFEE;border-left:3px solid var(--alert);
+    padding:1rem 1.15rem;margin:1.75rem 0;font-size:.93rem;
+  }
+  .warn p:last-child{margin-bottom:0;}
+  .warn strong{color:var(--alert);}
+
+  footer{
+    border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;
+    font-size:.82rem;color:var(--muted);
+  }
+  footer a{display:inline-block;margin-right:1.25rem;}
+</style>
+</head>
+<body>
+
+<header class="sheet-head">
+  <div class="sheet-inner">
+    <a class="back" href="index.html">&larr; COS Fantasy</a>
+    <h1>Delete Your<br>Account</h1>
+    <p class="standfirst">
+      Two ways to do it. Both remove everything, and neither can be undone.
+    </p>
+  </div>
+</header>
+
+<main>
+
+  <div class="route">
+    <span class="route-label">Fastest — if you still have the app</span>
+    <h2>Delete it in the app</h2>
+    <ol class="steps">
+      <li>Open COS Fantasy and sign in.</li>
+      <li>Go to the <b>Profile</b> tab.</li>
+      <li>Scroll to the bottom and tap <b>Delete Account</b>.</li>
+      <li>Confirm when asked.</li>
+    </ol>
+    <p>
+      Deletion happens immediately. You will be signed out and returned to the
+      sign-in screen.
+    </p>
+  </div>
+
+  <div class="route">
+    <span class="route-label">If you have uninstalled or cannot sign in</span>
+    <h2>Ask us by email</h2>
+    <p>
+      Email us from the address on your account. We need it to come from that
+      address so we can confirm the account is yours.
+    </p>
+    <a class="mailto-btn"
+       href="mailto:support@cosfantasy.app?subject=Delete%20my%20account&body=Please%20delete%20my%20COS%20Fantasy%20account%20and%20all%20associated%20data.%0A%0AI%20understand%20this%20cannot%20be%20undone.">
+      Email a deletion request
+    </a>
+    <p style="margin-top:1rem">
+      Or write to
+      <a class="contact" href="mailto:support@cosfantasy.app">support@cosfantasy.app</a>
+      with the subject <b>Delete my account</b>. We confirm within 30 days,
+      usually much sooner.
+    </p>
+  </div>
+
+  <h2>What gets deleted</h2>
+
+  <div class="ledger">
+    <div class="ledger-row">
+      <span class="ledger-key gone">Deleted</span>
+      <span>Your account and email address</span>
+    </div>
+    <div class="ledger-row">
+      <span class="ledger-key gone">Deleted</span>
+      <span>Your team name, squad, and captain selection</span>
+    </div>
+    <div class="ledger-row">
+      <span class="ledger-key gone">Deleted</span>
+      <span>Your transfer history and points total</span>
+    </div>
+    <div class="ledger-row">
+      <span class="ledger-key gone">Deleted</span>
+      <span>Every league membership, and any private league you created once its last member leaves</span>
+    </div>
+    <div class="ledger-row">
+      <span class="ledger-key gone">Deleted</span>
+      <span>Your notification token and usage records</span>
+    </div>
+    <div class="ledger-row">
+      <span class="ledger-key kept">Kept</span>
+      <span>Match results and scoring records, with every reference to you removed. Nothing kept identifies you.</span>
+    </div>
+  </div>
+
+  <div class="warn">
+    <p>
+      <strong>This cannot be undone.</strong> There is no recovery window and no
+      archived copy. If you sign up again later, you start from zero — new team,
+      no points, no league history.
+    </p>
+  </div>
+
+  <h3>Signed in with Google?</h3>
+  <p>
+    Deleting your COS Fantasy account does not touch your Google account. It
+    only removes the connection between them and everything COS Fantasy stored.
+    You can also revoke our access from your
+    <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">Google account permissions</a>
+    page, though deleting here already does that.
+  </p>
+
+  <footer>
+    <a href="index.html">Privacy policy</a>
+    <a href="support.html">Support</a>
+    <p style="margin-top:1rem">
+      COS Fantasy is an independent student project, not affiliated with or
+      endorsed by KNUST.
+    </p>
+  </footer>
+
+</main>
+</body>
+</html>
